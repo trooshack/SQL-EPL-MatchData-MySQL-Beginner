@@ -7,8 +7,8 @@ Free MS Azure Subscription is used to create resources on Azure, including a Lin
 
 <img width="940" height="511" alt="image" src="https://github.com/user-attachments/assets/28da11c2-1629-4e50-91af-ab7c11490959" />
 
-**STEP 2: SETTING UP USER AND LOGGING ONTO THE SERVER USING SSH ENCRYPTED KEYS AND INSTALL MYSQL ON THE SERVER
-**
+STEP 2: SETTING UP USER AND LOGGING ONTO THE SERVER USING SSH ENCRYPTED KEYS AND INSTALL MYSQL ON THE SERVER
+
 Windows Subsystem for Linux (WSL) on home pc was used to access the server on Azure cloud. Server is Linux Ubuntu based.
 
 <img width="940" height="394" alt="image" src="https://github.com/user-attachments/assets/dbc368f6-d225-4429-b5e2-a56eb9bf18b3" />
@@ -17,8 +17,8 @@ Upon accessing the Server, Mysql was instaled on the server.
 
 <img width="940" height="377" alt="image" src="https://github.com/user-attachments/assets/7d665eaf-a7c0-4db1-b79d-91e6aedfb76a" />
 
-**STEP 3: Data downloaded from Kaggle.com in the .csv format. Transferred data onto the server. 
-**
+STEP 3: Data downloaded from Kaggle.com in the .csv format. Transferred data onto the server. 
+
 English Premier League (EPL) Match Data 2000-2025:
 Data was downloaded from this link https://www.kaggle.com/datasets/marcohuiii/english-premier-league-epl-match-data-2000-2025.
 
@@ -28,8 +28,8 @@ Data was securely copied from the local machine to the server.
 
 <img width="1045" height="28" alt="image" src="https://github.com/user-attachments/assets/de9eeeb2-da68-4c4c-8fdb-e9b277d8db12" />
 
-**STEP 4: Database and table creation, mounting data from .csv to sql tables.
-**
+STEP 4: Database and table creation, mounting data from .csv to sql tables.
+
 Below commands were used to create database 'cloud_sql_demo' and table 'epl_2025' with required fields.
 
 <img width="530" height="849" alt="image" src="https://github.com/user-attachments/assets/f2152171-ad67-4b80-a1f7-fc3adf4404e6" />
@@ -50,8 +50,8 @@ MySQL server has a security feature enabled called --secure-file-priv. This opti
 
 <img width="940" height="62" alt="image" src="https://github.com/user-attachments/assets/5c63b743-f863-4bd2-a5c6-8f22a99b143c" />
 
-**STEP 5: Querying the database
-**
+STEP 5: Querying the database
+
 From the table, showing the first 10 records.
 
 SELECT * FROM epl_2025 LIMIT 10;
