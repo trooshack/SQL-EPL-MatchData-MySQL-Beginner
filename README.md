@@ -55,7 +55,7 @@ USE cloud_sql_demo SHOW TABLES; - OUTPUT
 <img width="516" height="223" alt="image" src="https://github.com/user-attachments/assets/a2d65f64-4874-4ef4-9ec6-1e826bed1d1a" />
 
 
-Transfer of data from .csv on the local machine to the server, and then mounting on the database was completing after overcoming challenges as mySQL does not allow copying data from anywhere on the server. It needs to be on a specific location. 
+Transfer of data from .csv on the local machine to the server, and  mounting on the database was completed after overcoming challenges as mySQL does not allow copying data from anywhere on the server. It needs to be on a specific location. 
 
 MySQL server has a security feature enabled called --secure-file-priv. This option restricts file import/export operations (like LOAD DATA INFILE) to only work with files located in a specific directory, which is set by the server configuration to prevent unauthorized file access.
 
