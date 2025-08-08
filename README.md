@@ -92,7 +92,9 @@ SELECT MatchDate, HomeTeam, AwayTeam, HomeFouls, AwayFouls, FulltimeResult FROM 
 <img width="940" height="291" alt="image" src="https://github.com/user-attachments/assets/84bbb6b0-5c18-4003-a8b3-b6ea7da14475" />
 
 
-A manager at one of the team may be interested to know which teams have adopted a physical game strategy at home, to get a win. Playing physical could lead to more fouls and at a home game it is usually a defensive strategy. So he might be interest in last 10 games where Home team made more fouls than the Away team, and ended on the winning side.
+A manager at one of the team may be interested to know which teams have adopted a physical game strategy at home, to get a win. Playing physical could lead to more fouls and at a home game it is usually a defensive strategy. So he might be interested in last 10 games where Home team made more fouls than the Away team, and ended on the winning side.
+
+Hence, he is querying data where HomeFouls are greater than AwayFouls, and the HomeTeam was the winner.
 
 SELECT MatchDate, HomeTeam, AwayTeam, HomeFouls, AwayFouls, FulltimeResult FROM epl_2025 WHERE HomeFouls > AwayFouls AND FullTimeResult = 'H' ORDER BY MatchDate DESC LIMIT 10;
 
